@@ -1,2 +1,4 @@
-# spring-boot-samples
-spring-boot-samples
+# 스프링 부트 샘플
+
+## 
+- 스프링 부트 관련 각종 샘플 코드 저장용 레파지토리
