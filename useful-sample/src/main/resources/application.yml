@@ -1,0 +1,10 @@
+sample:
+  name: name
+  count: 1
+  options: [ 'a', 'b' ]
+  props:
+    foo: bar
+record:
+  name: name
+  count: 1
+  options: [ 'a', 'b' ]
