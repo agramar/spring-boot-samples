@@ -1,13 +1,10 @@
-package io.github.agramar.sample;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SampleApplicationTests {
+class RedisSampleApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
-
+    @Test
+    void contextLoads() {
+    }
 }

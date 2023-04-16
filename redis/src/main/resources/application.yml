@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: redis-sample
+#  data:
+#    redis:
+#      database: 0
+#      client-name: good
+#      connect-timeout:
+#      password:
+#      port:
+#      host:
+#      jedis:
+#        pool:
+#          enabled:
+#      repositories:
+#        enabled:
+#      cluster:
+#        max-redirects: 0
+#  cache:
+#    redis:
+#      key-prefix: sample
+#      use-key-prefix: true
+#      cache-null-values: false
+#      enable-statistics: true
+#      time-to-live: 1m
