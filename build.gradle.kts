@@ -48,6 +48,7 @@ subprojects {
     }
 
     dependencies {
+        implementation("org.springframework.boot:spring-boot-starter-web")
         implementation("org.springframework.boot:spring-boot-starter-validation")
 
         annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")

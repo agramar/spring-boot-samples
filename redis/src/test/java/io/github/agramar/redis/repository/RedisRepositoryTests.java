@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.data.redis.DataRedisTest;
 import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -14,7 +15,6 @@ import org.springframework.data.geo.Circle;
 import org.springframework.data.geo.Distance;
 import org.springframework.data.geo.Metrics;
 import org.springframework.data.geo.Point;
-import org.springframework.test.context.event.annotation.BeforeTestMethod;
 
 import java.util.List;
 
@@ -22,6 +22,7 @@ import static io.github.agramar.redis.domain.AccommodationType.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @Slf4j
+@DataRedisTest
 @DisplayName("레디스 레파지토리 테스트")
 public class RedisRepositoryTests extends RedisTests {
 

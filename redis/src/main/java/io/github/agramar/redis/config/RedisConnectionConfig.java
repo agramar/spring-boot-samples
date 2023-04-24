@@ -8,7 +8,7 @@ import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
 import org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory;
 
 @Configuration
-public class RedisConfig {
+public class RedisConnectionConfig {
 
     @Value("${spring.data.redis.port}")
     public int port;
@@ -16,6 +16,9 @@ public class RedisConfig {
     @Value("${spring.data.redis.host}")
     public String host;
 
+    /**
+     * 레디스 Lettuce Client Connection 설정
+     */
     @Bean
     public RedisConnectionFactory redisConnectionFactory() {
         return new LettuceConnectionFactory(new RedisStandaloneConfiguration(host, port));
