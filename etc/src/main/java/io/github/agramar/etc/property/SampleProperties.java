@@ -18,13 +18,17 @@ import java.util.Map;
 @Configuration
 @ConfigurationProperties(prefix = "sample")
 public class SampleProperties {
+
     @NotBlank
     private String name;
+
     @Min(1)
     @Max(10)
     private int count;
+
     @Size(min = 1, max = 10)
     private List<String> options;
+
     @NotEmpty
     private Map<String, String> props;
 }

@@ -10,6 +10,7 @@ import static io.github.agramar.etc.module.OpenApiType.GOOGLE;
 @Slf4j
 @Component
 public class GoogleApi implements OpenApi {
+
     @Override
     public OpenApiType getType() {
         return GOOGLE;

@@ -11,6 +11,7 @@ import static io.github.agramar.etc.module.OpenApiType.FACEBOOK;
 @Slf4j
 @Component
 public class FacebookApi implements OpenApi {
+
     @Override
     public OpenApiType getType() {
         return FACEBOOK;

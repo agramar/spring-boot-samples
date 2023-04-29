@@ -27,5 +27,7 @@ public class RedisTemplateTests extends RedisTests {
         valueOperations.set(key, value);
 
         assertThat(valueOperations.get(key)).isEqualTo(value);
+
+        redisTemplate.opsForGeo();
     }
 }

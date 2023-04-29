@@ -11,6 +11,7 @@ import static io.github.agramar.etc.module.OpenApiType.GITHUB;
 @Slf4j
 @Component
 public class GithubApi implements OpenApi {
+
     @Override
     public OpenApiType getType() {
         return GITHUB;
