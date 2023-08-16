@@ -1,0 +1,36 @@
+server:
+  port: 8888
+
+spring:
+  profiles:
+    active: local
+  application:
+    name: jsp
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+mybatis:
+  type-aliases-package: io.github.agramar.web.jsp.mapper
+  mapper-locations: /mybatis/mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/world
+    username: root
+    password: 1q2w3e4r
+  security:
+    user:
+      name: user
+      password: 1234
+  devtools:
+    livereload:
+      enabled: true

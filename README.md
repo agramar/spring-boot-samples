@@ -5,4 +5,4 @@
 
 ## 스펙
 - Java 17
-- Spring Boot 3.0.5
+- Spring Boot 3.1.2
